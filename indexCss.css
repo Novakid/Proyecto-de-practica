@@ -1,21 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*primera pantalla de la pagina*/
 body{
     background-color: gray;
-}
-header{
-    text-align: center;
+    width: 100%;
+    height: 100%;
     font-family: Arial;
+}
+
+.header {
+    text-align: center;    
     border-radius: 2%;
     background-color: blanchedalmond;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-nav{
+.nav{
     background-color: aqua;
     text-align: justify;
     font-family: 'Gill Sans';
-    border-radius: 1%;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
+    border-radius: 1%;    
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 article{
     text-align: center;
@@ -25,7 +39,7 @@ article{
     border-style: double;
     padding: 0%;
     margin: 0%;
-    width: 100%;
+    
 }
 footer{
     text-align: left;
@@ -34,5 +48,53 @@ footer{
 }
 .Segundo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.articles {
+    flex-grow: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.form button {
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;   
+    height: 50px;
+    border-radius: 5px;
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.form button:hover {
+    background-color: crimson;
+    color: #000;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%
 }

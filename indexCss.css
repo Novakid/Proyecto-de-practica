@@ -68,16 +68,17 @@ footer{
     margin: 5px;
     border-radius: 5px;
 }
+.form textarea{
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+}
 
 .form button {
     display: block;
     outline: none;
     border: none;
-<<<<<<< HEAD
-    width: 40%;   
-=======
-    width: 100%;   
->>>>>>> refs/remotes/origin/master
+    width: 40%;
     height: 50px;
     border-radius: 5px;
     background-color: coral;

@@ -73,7 +73,11 @@ footer{
     display: block;
     outline: none;
     border: none;
+<<<<<<< HEAD
     width: 40%;   
+=======
+    width: 100%;   
+>>>>>>> refs/remotes/origin/master
     height: 50px;
     border-radius: 5px;
     background-color: coral;

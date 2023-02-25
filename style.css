@@ -105,3 +105,12 @@ footer {
     bottom: 0;
     width: 100%
 }
+
+.Visualizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;        
+    padding: 10px;
+    width: 100%
+}

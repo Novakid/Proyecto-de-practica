@@ -53,7 +53,9 @@ footer{
 .articles {
     flex-grow: 1;
 }
-
+.label2{
+    display: flex;
+}
 .form {
     display: flex;
     flex-direction: column;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="indexCss.css">
+    <link rel="stylesheet" href="js.js">
     <title>Primer proyecto</title>
 </head>
 <body>
@@ -25,22 +26,22 @@
                 <form class="form">
                     <h2>Ingreso de Datos</h2>
                     <label>Ingrese la ID del producto</label>
-                    <input type="text" placeholder="id del producto"/>
+                    <input type="text" placeholder="id del producto" id="ID"/>
                     <label>Ingrese el Nombre del producto</label>
-                    <input type="text" placeholder="nombre del producto" />
+                    <input type="text" placeholder="nombre del producto" id="Nombre" />
                     <label>Ingrese el tipo de producto</label>
-                    <input type="text" placeholder="bebida,comestible, etc.">
+                    <input type="text" placeholder="bebida,comestible, etc." id="Tipo">
                     <label>Ingrese una descripción del producto</label>
                     <textarea name="descrip" id="descrip" cols="30" rows="10" placeholder="Ingrese una descripción del producto ingresado"></textarea>
-                    <button type="submit">Capturar</button>
+                    <button type="submit" id="capturar">Capturar</button>
                 </form>
             </article>
             <article>
                 <div>
                     <b>Visualizador de datos</b>
-                    <p>Nombre del producto</p>
-                    <p>Fecha de ingreso</p>
-                    <p>Descripción del producto</p>
+                    <b id="Nombrefun">Nombre del producto:</b>
+                    <b id="Tipofun">Tipo de producto:</b>
+                    <b id="descripfun">descripción del producto</b>
                 </div>
             </article>
         </div>
@@ -49,6 +50,5 @@
         Pagina creada en conjunto con mi frien :)
         &copy; 
     </footer>
-    <script src="js.js"></script>
 </body>
 </html>

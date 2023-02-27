@@ -41,11 +41,6 @@ article{
     margin: 0%;
     
 }
-footer{
-    text-align: left;
-    background-color: beige;
-    font-family: arial;
-}
 .Segundo{
     display: flex;
     justify-content: space-between;
@@ -98,10 +93,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 1px;
     background-color: #000;
     color: #fff;
-    position: absolute;
-    bottom: 0;
+    bottom: 1px;
+    width: 100%
+}
+
+.Visualizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;        
+    padding: 10px;
     width: 100%
 }

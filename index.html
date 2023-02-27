@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="indexCss.css">
-    <link rel="stylesheet" href="js.js">
     <title>Primer proyecto</title>
 </head>
 <body>
@@ -23,7 +22,7 @@
         </nav>
         <div class="articles">
             <article>
-                <form class="form">
+                <form class="form" id="form-captura">
                     <h2>Ingreso de Datos</h2>
                     <label>Ingrese la ID del producto</label>
                     <input type="text" placeholder="id del producto" id="ID"/>
@@ -33,15 +32,18 @@
                     <input type="text" placeholder="bebida,comestible, etc." id="Tipo">
                     <label>Ingrese una descripción del producto</label>
                     <textarea name="descrip" id="descrip" cols="30" rows="10" placeholder="Ingrese una descripción del producto ingresado"></textarea>
-                    <button type="submit" id="capturar">Capturar</button>
+                    <button type="submit">Capturar</button>
                 </form>
             </article>
             <article>
-                <div>
-                    <b>Visualizador de datos</b>
-                    <b id="Nombrefun">Nombre del producto:</b>
-                    <b id="Tipofun">Tipo de producto:</b>
-                    <b id="descripfun">descripción del producto</b>
+                <div class="Visualizador">
+                    <h2>Visualizador de datos <span id="muestra-id"></span></h2>
+                    <label>Nombre del producto:</label>
+                    <b id="muestra-nombre"></b><br>
+                    <label>Tipo de producto:</label>
+                    <b id="muestra-tipo"></b><br>
+                    <label>Descripcion de producto:</label>
+                    <b id="muestra-descripcion"></b>
                 </div>
             </article>
         </div>
@@ -50,5 +52,6 @@
         Pagina creada en conjunto con mi frien :)
         &copy; 
     </footer>
+    <script src="js.js"></script>
 </body>
 </html>

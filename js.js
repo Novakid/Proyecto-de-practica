@@ -1,19 +1,22 @@
 //Aquí va el codigo javascripv
-let Nombrefun = document.getElementById('Nombrefun'), 
-Tipofun = document.getElementById('Tipofun'), 
-descripfun = document.getElementById('descripfun');
+const muestraNombre = document.getElementById('muestra-nombre'),
+muestraTipo = document.getElementById('muestra-tipo'),
+muestraDescripcion = document.getElementById('muestra-descripcion'),
+muestraId = document.getElementById('muestra-id');
 
-let boton = document.getElementById('capturar');
+const boton = document.getElementById('form-captura');
 
 boton.addEventListener("submit", myfunction)
 
 function myfunction(e){
     e.preventDefault()
+    let Id = document.getElementById('ID').value;
     let Nombre = document.getElementById('Nombre').value;
     let Tipo = document.getElementById('Tipo').value;
     let descrip = document.getElementById('descrip').value;
 
-    Nombrefun.innerHTML = Nombre;
-    Tipofun.innerHTML = Tipo;
-    descripfun.innerHTML = descrip;
+    muestraId.innerHTML = Id;
+    muestraNombre.innerHTML = Nombre;
+    muestraTipo.innerHTML = Tipo;
+    muestraDescripcion.innerHTML = descrip;
 }

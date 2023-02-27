@@ -1,13 +1,12 @@
-console.log('up and running');
-//Aquí va el codigo javascripv
-const muestraProducto = document.getElementById('muestra-producto');
-const muestraTipo = document.getElementById('muestra-tipo');
-const muestraDescripcion = document.getElementById('muestra-descripcion');
-const muestraId = document.getElementById('muestra-id');
+//Aquí va el codigo javascrip
+const muestraNombre = document.getElementById('muestra-nombre'),
+muestraTipo = document.getElementById('muestra-tipo'),
+muestraDescripcion = document.getElementById('muestra-descripcion'),
+muestraId = document.getElementById('muestra-id');
 
-const formulario = document.getElementById('form-captura');
+const boton = document.getElementById('form-captura');
 
-formulario.addEventListener("submit", myfunction)
+boton.addEventListener("submit", myfunction)
 
 function myfunction(e){
     e.preventDefault()
@@ -16,8 +15,8 @@ function myfunction(e){
     let Tipo = document.getElementById('Tipo').value;
     let descrip = document.getElementById('descrip').value;
 
-    muestraId.innerHTML = "("+Id+")";
-    muestraProducto.innerHTML = Nombre;
+    muestraId.innerHTML = Id;
+    muestraNombre.innerHTML = Nombre;
     muestraTipo.innerHTML = Tipo;
     muestraDescripcion.innerHTML = descrip;
 }

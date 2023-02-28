@@ -20,3 +20,7 @@ function myfunction(e){
     muestraTipo.innerHTML = Tipo;
     muestraDescripcion.innerHTML = descrip;
 }
+let ruta = 'http://localhost:3000'
+fetch(ruta,{
+     
+})
